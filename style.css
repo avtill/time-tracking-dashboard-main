@@ -2,5 +2,15 @@ body{
     background: #0d1323;
     color: #f9f8ff;
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+img{
+    width: 100px;
+    border: 5px solid #f9f8ff;
+    border-radius: 50%;
+}
