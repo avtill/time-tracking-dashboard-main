@@ -43,6 +43,10 @@ nav{
 li{
     text-decoration: none;
     list-style-type: none;
+    margin:20px
+}
+h6{
+    font-size: 18px;
 }
 #report{
     background: #5746ea;
@@ -80,4 +84,7 @@ li{
 #selfcare{
     grid-column: 4/5;
     grid-row: 2/3;
+}
+.result{
+    font-size: 56px;
 }
