@@ -13,7 +13,7 @@ footer{
     
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color:  #cac2fc;
 }
 img{
     width: 100px;
@@ -30,6 +30,10 @@ img{
         margin-top: 100px; 
 }
 }
+
+li:active, li:hover, li:visited {
+    color: #f9f8ff
+}
 #nav-report{
     grid-column: 1/2;
     grid-row: 1/3;
@@ -43,9 +47,13 @@ nav{
     border-radius: 30px;
 }
 li{
+    color: #cac2fc;
     text-decoration: none;
     list-style-type: none;
-    margin:10px
+    margin:20px
+}
+li:active, li:hover, li:visited {
+    color: #f9f8ff
 }
 h6{
     font-size: 18px;
