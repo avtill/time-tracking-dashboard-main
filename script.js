@@ -1,6 +1,9 @@
+let array =[];
 fetch('./data.json')
     .then((response) => response.json())
-    .then((json) => console.log(json));
+    .then((json) => array.push(json));
+
+console.log(array);
 
 const navDaily = document.getElementById("navDaily");
 const navWeekly = document.getElementById("navWeekly");
@@ -21,12 +24,15 @@ const selfcarePrev = document.getElementById("selfcarePrev");
 
 
 navDaily.addEventListener("click", ()=>{
-    console.log("daily")
-    workResult.nodeValue = `${json[0].timeframes.daily.current}`;
-    workPrev.nodeValue = `Previous - ${json[0].timeframes.daily.previous}`;
+    workResult.innerHTML = `${json[0].timeframes.daily.current}`;
+    workPrev.innerHTML = `Previous - ${json[0].timeframes.daily.previous}`;
 });
 
 navWeekly.addEventListener("click", ()=>{
-    workResult.nodeValue = `${json[0].timeframes.weekly.current}`;
-    workPrev.nodeValue = "Previous -" + `${json[0].timeframes.weekly.previous}`;
+    workResult.innerHTML = `${json[0].timeframes.weekly.current}`;
+    workPrev.innerHTML = "Previous -" + `${json[0].timeframes.weekly.previous}`;
 });
+
+navMonthly.addEventListener("click", ()=>{
+    console.log("śmiga")
+})
