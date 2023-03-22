@@ -52,7 +52,7 @@ a{
     color: #cac2fc;
     text-decoration: none; 
 }
-a:active, a:hover, a:visited {
+li:active, li:hover, li:visited {
     color: #f9f8ff
 }
 h6{
