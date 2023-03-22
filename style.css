@@ -80,6 +80,9 @@ h6{
     margin-top: 50px;
     padding: 20px;
 }
+.contentBlock:hover {
+    background: hsl(235, 45%, 61%);
+}
 #work{
     background-color: #ff8b64;
     background-image: url(images/icon-work.svg);
