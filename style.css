@@ -4,9 +4,6 @@ body{
     font-size: 18px;
     font-family: Rubik;
 }
-footer{
-   margin-top: 50px;
-}
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -49,7 +46,27 @@ h6{
 .dots:hover{
     opacity: 1;
 }
+.block{
+    display: block;
+    margin: 10px;
+    border-radius: 30px;
+}
+.contentBlock{
+    position: relative;
+    display: block;
+    background: #1d204b;
+    border-radius: 30px;
+    padding: 20px;
+}
+.contentBlock:hover {
+    position: relative;
+    background: hsl(235, 45%, 61%);
+}
 @media (min-width: 700px){
+    footer{
+        position: relative;
+        bottom: 0;
+    }
     #grid{
         display: grid;
         width: 1300px;
@@ -82,8 +99,19 @@ li{
     list-style-type: none;
     margin:20px
 }
+.block{
+    width: 250px;
+}
+.contentBlock{
+    margin-top: 50px;
+    height: 150px;
+}
 }
 @media(max-width: 700px){
+    footer{
+        position: sticky;
+        bottom: 0;
+    }
     #report{
         display: grid;
         grid-template: 1fr 1fr / 1fr 1fr 1fr;
@@ -97,50 +125,48 @@ li{
         border-radius: 30px;
         background: #1d204b;
     }  
-  picture{
-    grid-column: 1/2;
-    grid-row: 1/3;
-  }
-  #report p{
-    grid-column: 2/4;
-    grid-row: 1/2;
-    padding-left: 10px;
-  }
-  #report h1{
-    grid-column: 2/4;
-    grid-row:2/3;
-    padding-left: 10px;
-    font-size: 20px;
-    text-decoration: none;
-  }
-li{
-    display: inline-block;
-    color: #cac2fc;
-    text-decoration: none;
-    list-style-type: none;
-    margin: 10px
-}
-}
-
-
-.block{
-    display: block;
-    width: 250px;
-    margin: 10px;
-    border-radius: 30px;
-}
-.contentBlock{
-    position: relative;
-    display: block;
-    background: #1d204b;
-    border-radius: 30px;
-    height: 150px;
-    margin-top: 50px;
-    padding: 20px;
-}
-.contentBlock:hover {
-    position: relative;
-    background: hsl(235, 45%, 61%);
+    picture{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    #report p{
+        grid-column: 2/4;
+        grid-row: 1/2;
+        padding-left: 10px;
+    }
+    #report h1{
+        grid-column: 2/4;
+        grid-row:2/3;
+        padding-left: 10px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    li{
+        display: inline-block;
+        color: #cac2fc;
+        text-decoration: none;
+        list-style-type: none;
+        margin: 10px
+    }
+    .block{
+        height: 80px;
+        width: auto;
+        padding-top: 50px;
+        margin-bottom: 80px;
+    }
+    .result{
+        font-size: 52px;
+        margin-bottom: 0px;
+        margin-top: 30px;
+    }
+    .contentBlock > p{
+        display: inline-block;
+        height: 30px;
+    }
+    .prev{
+        color:#cac2fc;
+        padding-left: 30px;
+    }
 }
 #work{
     background-color: #ff8b64;
