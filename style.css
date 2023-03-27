@@ -10,15 +10,9 @@ footer{
 .attribution {
     font-size: 11px;
     text-align: center;
-    
 }
 .attribution a {
     color:  #cac2fc;
-}
-img{
-    width: 100px;
-    border: 5px solid #f9f8ff;
-    border-radius: 50%;
 }
 @media screen and (min-width: 1440px){
     #grid{
@@ -29,6 +23,11 @@ img{
         margin: auto;
         margin-top: 100px; 
 }
+}
+.avatar{
+    width: 100px;
+    border: 5px solid #f9f8ff;
+    border-radius: 50%;
 }
 #nav-report{
     grid-column: 1/2;
@@ -52,13 +51,27 @@ a{
     color: #cac2fc;
     text-decoration: none; 
 }
-li:active, li:hover, li:visited {
+a:active, a:hover, a:visited {
     color: #f9f8ff
 }
 h6{
+    position: absolute;
+    top: 0;
+    left:20px;
     font-size: 18px;
     margin-top: 10px;
     margin-bottom: 30px;
+    padding-top: 20px;
+}
+.dots{
+    position:absolute;
+    top: 0;
+    right: 20px;
+    padding-top: 30px;
+    opacity: 0.6;
+}
+.dots:hover{
+    opacity: 1;
 }
 #report{
     background: #5746ea;
@@ -70,9 +83,9 @@ h6{
     width: 250px;
     margin: 10px;
     border-radius: 30px;
-    
 }
 .contentBlock{
+    position: relative;
     display: block;
     background: #1d204b;
     border-radius: 30px;
@@ -81,6 +94,7 @@ h6{
     padding: 20px;
 }
 .contentBlock:hover {
+    position: relative;
     background: hsl(235, 45%, 61%);
 }
 #work{
@@ -134,5 +148,5 @@ h6{
 .result{
     font-size: 56px;
     margin-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 30px;
 }
