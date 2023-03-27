@@ -155,7 +155,7 @@ li{
         margin-bottom: 80px;
     }
     .result{
-        font-size: 52px;
+        font-size: 36px;
         margin-bottom: 0px;
         margin-top: 30px;
     }
@@ -164,8 +164,9 @@ li{
         height: 30px;
     }
     .prev{
+        font-size: 18px;
         color:#cac2fc;
-        padding-left: 30px;
+        padding-left: 20px;
     }
 }
 #work{

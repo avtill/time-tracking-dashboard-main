@@ -43,17 +43,17 @@ navWeekly.addEventListener("click", ()=>{
     .then((response) => response.json())
     .then((json) => {
         workResult.innerHTML = `${json[0].timeframes.weekly.current}hrs`;
-        workPrev.innerHTML = "Previous -" + `${json[0].timeframes.weekly.previous}hrs`
+        workPrev.innerHTML = "Last week -" + `${json[0].timeframes.weekly.previous}hrs`
         playResult.innerHTML = `${json[1].timeframes.weekly.current}hrs`;
-        playPrev.innerHTML = `Previous - ${json[1].timeframes.weekly.previous}hrs`;
+        playPrev.innerHTML = `Last week - ${json[1].timeframes.weekly.previous}hrs`;
         studyResult.innerHTML = `${json[2].timeframes.weekly.current}hrs`;
-        studyPrev.innerHTML = `Previous - ${json[2].timeframes.weekly.previous}hrs`;
+        studyPrev.innerHTML = `Last week - ${json[2].timeframes.weekly.previous}hrs`;
         exerciseResult.innerHTML = `${json[3].timeframes.weekly.current}hrs`;
-        exercisePrev.innerHTML = `Previous - ${json[3].timeframes.weekly.previous}hrs`;
+        exercisePrev.innerHTML = `Last week - ${json[3].timeframes.weekly.previous}hrs`;
         socialResult.innerHTML = `${json[4].timeframes.weekly.current}hrs`;
-        socialPrev.innerHTML = `Previous - ${json[4].timeframes.weekly.previous}hrs`;
+        socialPrev.innerHTML = `Last week - ${json[4].timeframes.weekly.previous}hrs`;
         selfcareResult.innerHTML = `${json[5].timeframes.weekly.current}hrs`;
-        selfcarePrev.innerHTML = `Previous - ${json[5].timeframes.weekly.previous}hrs`;
+        selfcarePrev.innerHTML = `Last week - ${json[5].timeframes.weekly.previous}hrs`;
     });
 });
 
@@ -62,16 +62,16 @@ navMonthly.addEventListener("click", ()=>{
     .then((response) => response.json())
     .then((json) => {
         workResult.innerHTML = `${json[0].timeframes.monthly.current} hrs`;
-        workPrev.innerHTML = `Previous - ${json[0].timeframes.monthly.previous} hrs`; 
+        workPrev.innerHTML = `Last month - ${json[0].timeframes.monthly.previous} hrs`; 
         playResult.innerHTML = `${json[1].timeframes.monthly.current}hrs`;
-        playPrev.innerHTML = `Previous - ${json[1].timeframes.monthly.previous}hrs`;
+        playPrev.innerHTML = `Last month - ${json[1].timeframes.monthly.previous}hrs`;
         studyResult.innerHTML = `${json[2].timeframes.monthly.current}hrs`;
-        studyPrev.innerHTML = `Previous - ${json[2].timeframes.monthly.previous}hrs`;
+        studyPrev.innerHTML = `Last month - ${json[2].timeframes.monthly.previous}hrs`;
         exerciseResult.innerHTML = `${json[3].timeframes.monthly.current}hrs`;
-        exercisePrev.innerHTML = `Previous - ${json[3].timeframes.monthly.previous}hrs`;
+        exercisePrev.innerHTML = `Last month - ${json[3].timeframes.monthly.previous}hrs`;
         socialResult.innerHTML = `${json[4].timeframes.monthly.current}hrs`;
-        socialPrev.innerHTML = `Previous - ${json[4].timeframes.monthly.previous}hrs`;
+        socialPrev.innerHTML = `Last month - ${json[4].timeframes.monthly.previous}hrs`;
         selfcareResult.innerHTML = `${json[5].timeframes.monthly.current}hrs`;
-        selfcarePrev.innerHTML = `Previous - ${json[5].timeframes.monthly.previous}hrs`;
+        selfcarePrev.innerHTML = `Last month - ${json[5].timeframes.monthly.previous}hrs`;
     } )
 })
