@@ -24,17 +24,17 @@ navDaily.addEventListener("click", ()=>{
     .then((response) => response.json())
     .then((json) => {
         workResult.innerHTML = `${json[0].timeframes.daily.current}hrs`;
-        workPrev.innerHTML = `Previous - ${json[0].timeframes.daily.previous}hrs`;
+        workPrev.innerHTML = `Last day - ${json[0].timeframes.daily.previous}hrs`;
         playResult.innerHTML = `${json[1].timeframes.daily.current}hrs`;
-        playPrev.innerHTML = `Previous - ${json[1].timeframes.daily.previous}hrs`;
+        playPrev.innerHTML = `Last day - ${json[1].timeframes.daily.previous}hrs`;
         studyResult.innerHTML = `${json[2].timeframes.daily.current}hrs`;
-        studyPrev.innerHTML = `Previous - ${json[2].timeframes.daily.previous}hrs`;
+        studyPrev.innerHTML = `Last day - ${json[2].timeframes.daily.previous}hrs`;
         exerciseResult.innerHTML = `${json[3].timeframes.daily.current}hrs`;
-        exercisePrev.innerHTML = `Previous - ${json[3].timeframes.daily.previous}hrs`;
+        exercisePrev.innerHTML = `Last day - ${json[3].timeframes.daily.previous}hrs`;
         socialResult.innerHTML = `${json[4].timeframes.daily.current}hrs`;
-        socialPrev.innerHTML = `Previous - ${json[4].timeframes.daily.previous}hrs`;
+        socialPrev.innerHTML = `Last day - ${json[4].timeframes.daily.previous}hrs`;
         selfcareResult.innerHTML = `${json[5].timeframes.daily.current}hrs`;
-        selfcarePrev.innerHTML = `Previous - ${json[5].timeframes.daily.previous}hrs`;
+        selfcarePrev.innerHTML = `Last day - ${json[5].timeframes.daily.previous}hrs`;
     })
 });
 
