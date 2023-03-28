@@ -152,7 +152,7 @@ li{
         height: 80px;
         width: auto;
         padding-top: 50px;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
     }
     .result{
         font-size: 36px;
@@ -162,11 +162,14 @@ li{
     .contentBlock > p{
         display: inline-block;
         height: 30px;
+        margin-bottom: 20px;
     }
     .prev{
+        width: 100px;
         font-size: 18px;
         color:#cac2fc;
         padding-left: 20px;
+        word-wrap: break-word;
     }
 }
 #work{
